@@ -1,0 +1,235 @@
+$font-stack:    'Interface', sans-serif
+$primary-color: #333
+@import 'data.sass'
+@import 'lib.sass'
+
+html, body
+	margin: 0px
+	padding: 0px
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+body
+	// background: #303452
+	background: #CBD7EE
+	background: linear-gradient(to right bottom, #CBD7EE, #717FAC)
+	font: 100% $font-stack
+	color: $primary-color
+	display: flex
+	justify-content: center
+	align-items: center
+
+main
+	margin: 0 auto
+	width: 90vw
+	height: 90vh
+	display: flex
+	background: #2d2c2d
+	background: linear-gradient(to right bottom, #2d2c2d, #1e1d1e)
+	box-shadow: 0px 0px 65px rgba(0,0,0,0.7)
+	overflow: hidden
+
+div.grid
+	display: flex
+	width: 54vw
+	height: 100%
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	overflow: hidden
+	opacity: 1
+	visibility: visible
+	transition: all 250ms ease
+
+div.grid.scroll
+	overflow: auto
+
+div.article
+	display: flex
+	width: 54vw
+	height: 50vw
+	transition: all 250ms ease
+	box-shadow: 0px 0px 80px rgba(0,0,0,0.25)
+
+//header
+header
+	display: flex
+	width: 18vw
+	height: 100%
+	flex-direction: column
+	transition: all 250ms ease
+
+div.tab
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 100%
+	height: 25vh
+
+div.right
+	display: flex
+	width: 18vw
+	height: 25vh
+	flex-direction: column
+	align-items: flex-end
+	justify-content: center
+
+div.content
+	display: flex
+	width: 0vw
+	height: 100% 
+	background: #EBEDF1
+
+div.special
+	transition: all 300ms ease
+
+div.title
+	display: flex 
+	width: 100%
+	height: 40vh
+
+div.social
+	display: flex
+	flex-direction: column
+	margin-top: 21px
+	align-items: flex-end
+	padding-right: 3vw
+
+div.splash
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 0 auto
+	width: 30em
+	height: 30em
+	justify-content: center
+	border-radius: 50%
+	box-shadow: 0px 0px 120px rgba(0,0,0,0.1)
+	background-image: url("../res/1200.jpg")
+	transition: all 250ms ease
+
+div.splash.grown
+	border-radius: 0%
+	height: 90vh
+	width: 48vw
+
+div.second
+	opacity: 0
+	transition: 300ms all ease
+	visibility: hidden
+
+//Text
+h1.logo
+	margin-left: 3vw
+	margin-bottom: 3px
+	display: flex
+	font-size: 2em
+	color: #EBEDF1
+	font-family: 'Interface'
+	user-select: none
+	cursor: pointer
+
+h1.item
+	margin-left: 3vw
+	margin-bottom: 0px
+	display: flex
+	font-size: 0.7em
+	color: #EBEDF1
+	font-family: 'Oswald'
+	font-weight: lighter
+	letter-spacing: 0.1em
+	cursor: pointer
+	transition: all 250ms ease
+
+a.contact
+	margin-right: 3vw
+	margin-bottom: 0px
+	display: flex
+	font-size: 0.85em
+	color: #EBEDF1
+	font-family: 'Oswald'
+	font-weight: lighter
+	letter-spacing: 0.1em
+	cursor: pointer
+	transition: all 250ms ease
+
+h1.item:hover
+	color: #A2647E
+
+h1.contact:hover
+	color: #A2647E
+
+h1.spot
+	margin-left: 3vw
+	margin-bottom: 0px
+	display: flex
+	font-size: 1.5em
+	color: #EBEDF1
+	font-family: 'Interface'
+	transition: all 250ms ease
+	
+h1.subtitle
+	display: flex
+	justify-content: center
+	font-size: 3em
+	padding-left: 2vw
+	padding-right: 2vw
+	height: 10vh
+	width: 36vw
+	font-family: 'Interface'
+	background: #EBEDF1
+	opacity: 0
+	user-select: none
+	color: #000
+	mix-blend-mode: screen
+
+div.link
+	margin-left: 3vw
+	margin-bottom: 0px
+	display: flex
+	font-size: 0.85em
+	color: #EBEDF1
+	font-family: 'Oswald'
+	text-decoration: none
+	letter-spacing: 0.1em
+	transition: all 250ms ease
+	font-weight: lighter
+	cursor: pointer
+
+div.link:hover
+	color: #A2647E
+
+i
+	font-size: 0.85em
+
+a
+	// margin: 0 auto
+	margin-bottom: 3vh
+	font-size: 1.15em
+	color: #EBEDF1
+	font-weight: lighter
+	cursor: pointer
+	text-decoration: none
+
+a:hover
+	color: #A2647E
+
+div.article-container
+	display: flex 
+	flex-direction: column
+	width: 40vw
+	height: 60vh
+	background: #EBEDF1
+	opacity: 0
+
+article
+	display: flex
+	margin: 0 auto
+	padding: 2vh 2vw 2vh 2vw
+	width: 36vw
+	height: 45
+	opacity: 0
+	font-family: 'Oswald'
+	font-size: 1.25em
+	letter-spacing: 0.04em
