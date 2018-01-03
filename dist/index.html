@@ -49,13 +49,16 @@
   </head>
   <body>
     <main>
-      <header>
+      <div class="takeover"></div>
+    </div>
+      <div class="wholePage">
+      <header class="left">
         <div class="tab HIDE">
           <h1 class="logo unswipe">HT</h1>
-          <h1 class="item swipe">PORTFOLIO</h1>
-          <h1 class="item swipe">TEAM</h1>
-          <h1 class="item swipe">ABOUT</h1>
-          <h1 class="item swipe">CONTACT</h1>
+          <h1 class="item swipe specificName" id="portfolio">PORTFOLIO</h1>
+          <h1 class="item swipe specificName" id="team">TEAM</h1>
+          <h1 class="item swipe specificName" id="about">ABOUT</h1>
+          <h1 class="item contact" id="contact">CONTACT</h1>
         </div>
         <div class="title HIDE">
 
@@ -72,11 +75,6 @@
         <!-- <div class="article"></div> -->
         <div class="splash" src="res/1200.jpg">
           <h1 class="subtitle">FRANKLIN CMS</h1>
-          <div class="article-container">
-            <article> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </article>
-            <a href="">Download</a>
-          </div>
         </div>
         
       </div>
@@ -99,13 +97,13 @@
           <div class="title HIDE"></div>
 
           <div class="right HIDE">
-            <a class="contact" href="mailto:info@halltechnologies.co?subject=Site">info@halltechnologies.co</a>
-            <a class="contact">937 846 4013</a>
+            <a class="contact pink" href="mailto:info@halltechnologies.co?subject=Site">info@halltechnologies.co</a>
+            <a class="contact pink">937 846 4013</a>
           </div>
         </div>
       </header>
-      <div class="content"></div>
-
+      <div class="page"></div>
+    </div>
     </main>
 
     <footer>
@@ -114,7 +112,14 @@
   </body>
 
   <!-- Scripts -->
-  <script src="js/script.min.js"></script>
+  <!-- <script src="js/script.min.js"></script> -->
+  <script type="text/javascript" src="js/popupData.js"></script>
+  <script type="text/javascript" src="js/contactData.js"></script>
+  <script type="text/javascript" src="js/tabData.js"></script>
+  <script type="text/javascript" src="js/tab.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/contact.js"></script>
+  <script type="text/javascript" src="js/close.js"></script>
+  <script type="text/javascript" src="js/mustache.js"></script>
   <script src="https://use.fontawesome.com/1d48056860.js"></script>
 </html>
